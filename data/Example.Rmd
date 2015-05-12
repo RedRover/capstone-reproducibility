@@ -21,9 +21,7 @@ instead (e.g. alpha)
 <!-- Load the politics.csv data file. -->
 First we need to load the data.
 
-```{r}
-pols<-read.csv("politics.csv")
-```
+> politics<-read.csv("politics")
 
 <!-- 
 Check the structure.
@@ -40,8 +38,8 @@ Subject should be a factor variable. Additionally, I prefer
 it when "pre" precedes "post". So I'm going to refactor those
 variables.
 ```{r}
-pols$subject<-factor(pols$subject)
-pols$testtime<-factor(pols$testtime, levels=c("pre", "post"))
+politics$subject<-factor(politics$subject)
+politics$testtime<-factor(politics$testtime, levels=c("pre", "post"))
 ```
 
 <!-- Find the minimum, mean, and median incomes. -->
