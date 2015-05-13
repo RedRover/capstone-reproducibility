@@ -47,7 +47,7 @@ I'd like to find the minimum, mean, and median incomes. I can do
 all this and more in one fell swoop.
 
 ```{r}
-summary(pols$income)
+summary(politics$income)
 ```
 
 <!-- Create a histogram of incomes.
@@ -81,7 +81,7 @@ affiliation and support are independent. Again, I don't want
 to count people twice, so I'll focus on the posttest data.
 
 ```{r}
-tab<-table(pols$party[pols$testtime=="pre"],pols$minwage[pols$testtime=="pre"])
+tab<-table(politics$party[politicss$testtime=="pre"],politics$minwage[politics$testtime=="pre"])
 tab
 ```
 
@@ -89,7 +89,7 @@ These are the frequencies individuals fell into the different
 conditions.
 
 ```{r}
-chisq.test(pols$party[pols$testtime=="pre"],pols$minwage[pols$testtime=="pre"])
+chisq.test(politics$party[politics$testtime=="pre"],politics$minwage[politics$testtime=="pre"])
 ```
 
 Political affiliation is not independent of support for minimum

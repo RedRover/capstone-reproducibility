@@ -1,3 +1,6 @@
+---
+output: word_document
+---
 #440 Reproducibility and Statistics Assignment Homework
 
 <!-- This is an Rmd comment. -->
